@@ -1,0 +1,153 @@
+/* this is the css for body , the background color is given as black */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    background-size:cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+   
+}
+
+#logodiv{
+    width: 220px;
+    height: 220px;
+    margin-left: 2%;
+    z-index: -1;
+}
+#logoimg{
+    width: 110%;
+    height: 100%;
+}
+
+/* setting the width of  the search bar  */
+#search-bar{
+    width: 35%;
+    background-color: black;
+    padding: 0.25%;
+    display: flex;
+    color: white;
+}
+/* styling the input section of the search function  */
+#search-bar input{
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px 20px;
+}
+
+
+/* css to the fav btn to neg to fav section */
+#right-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+#right-section button{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 30px;
+}
+#right-section button:hover, #right-section select:hover{
+    color: red;
+    text-decoration: none;
+}
+.my-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* all movies cards  */
+#movie-container{
+    padding-top: 2%;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.movie-element{
+    margin: 20px;
+    border-radius: 20px;
+    transition:ease-in;
+    box-shadow: 0 3px 15px rgba(255,255,255,0.5 );
+}
+.movie-poster{
+    height: 350px;
+    width: 250px;
+}
+.movie-element:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 15px rgba(255,0,0,0.5 );
+}
+.movie-poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/* name of the movie  */
+.movie-title{
+    max-width: 240px;
+    margin: 4px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.movie-element-tags{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* movie rating  */
+.movie-rating, .add-movie-to-list{
+    font-size: 1.4rem;
+}
+.movie-rating i{
+    color: gold;
+}
+.add-movie-to-list{
+    color: white;
+}
+.add-movie-to-list:hover{
+    color: red;
+}
+/* prev and next button  */
+.page-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page-navigation button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border:1px solid white;
+    background-color: transparent;
+}
+.page-navigation button:hover{
+    transform: scale(1.1);
+    border:1px solid red;
+    color: red;
+}

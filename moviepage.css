@@ -1,0 +1,158 @@
+/* css for the body  */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+/* css for the main div  */
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 10;
+}
+/* setting the width and height of the logo  */                                                
+#logodiv{
+    width: 180px;
+    height: 130px;
+    margin-left: 1%;
+    display: felx;
+}
+#logoimg{
+    width: 110%;
+    height: 100%;
+}
+
+#right-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+#right-section button{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 30px;
+}
+#right-section button:hover, #right-section select:hover{
+    color: red;
+    text-decoration: none;
+}
+.my-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* display movie details */
+#movie-display{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.each-movie-page{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+.movie-poster{
+    margin: 0px 20px;
+    height: 90%;
+}
+/* movie image  */
+.movie-poster img{
+    height: 90%;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 10px 18px 18px 10px rgba(0,0,0,0.7);
+    transition: 0.3s;
+}
+.movie-poster img:hover{
+    box-shadow: 0 28px 9px 0 rgba(0,0,0,0.5);
+}
+.movie-duration i{
+    color: white;
+}
+.movie-details > *{
+    margin: 20px 50px;
+    font-size: 1.7rem;
+}
+/* movie name */
+.title{
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    margin: 20px 0px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.release_date, .movie-duration{
+    padding-right: 30px;
+}
+/* youtube video div  */
+.trailer-div{
+    transition: all .2s ease;
+    size: 5em;
+    color: red;
+}
+#trailer-video-div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    display: none;
+    padding: 10px;
+    text-align: end;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 10;
+}
+#trailer-video-div button{
+    cursor: pointer;
+    font-size: 2rem;
+    color: red;
+    background: none;
+    border: none;
+}
+/* back button  */
+#return-to-home{
+    top: 30px;
+    left: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: rgb(255, 0, 0);
+}
+#return-to-home:hover{
+    color: white;
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+}
+/* details of the movie */
+.plot{
+    color: white;
+    border: 1px solid white;
+    padding: 3%;
+    box-shadow: 0 3px 15px rgba(255,255,255,0.5 );
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.5;
+}
+

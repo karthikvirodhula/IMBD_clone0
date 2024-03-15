@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    background-size:cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+/* header section css */
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+    /* box-shadow:  0px 0px 10px rgba(255,0,0,0.5 ) inset; */
+   
+}
+/* setting the width and height of the logo  */
+#logodiv{
+    width: 220px;
+    height: 220px;
+    margin-left: 2%;
+    z-index: -1;
+}
+#logoimg{
+    width: 110%;
+    height: 100%;
+}
+
+
+/* css to the fav btn to neg to fav section */
+#right-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+#right-section button{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 30px;
+}
+#right-section button:hover, #right-section select:hover{
+    color: red;
+    text-decoration: none;
+}
+.my-list a{
+    text-decoration: none;
+    color: inherit;
+}
